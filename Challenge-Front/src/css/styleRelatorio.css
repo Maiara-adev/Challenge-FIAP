@@ -1,0 +1,115 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    height: 100vh;
+    border-right: 1px solid #e9ecef;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.nav-link.active {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #dc3545;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+/* Estilo do switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #333333;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #3c3c3c;
+    color: #232323;
+}
+
+body.dark-mode .card {
+    background-color: #3f3f3f;
+    color: #f8f9fa;
+}
+
+body.dark-mode .sidebar {
+    background-color: #323232;
+}
+
+body.dark-mode .nav-link {
+    color: #bbb;
+}
+
+
+body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode p {
+    color: #ffffff;
+}
+
+body.dark-mode tr {
+    color: #ffffff;
+}

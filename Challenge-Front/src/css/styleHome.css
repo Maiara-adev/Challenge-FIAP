@@ -1,0 +1,99 @@
+* {
+    font-family: var(--font-family-poppins);
+}
+
+.plan-card {
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+}
+
+.plan-basic {
+    background: linear-gradient(to bottom, #F01313, #790000);
+}
+
+.plan-delivery {
+    background: linear-gradient(to bottom, #F01313, #790000);
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.plan-card p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar a {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #EA1D2C;
+}
+
+.navbar-toggler {
+    background-color: #F5F5F5;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar-toggler-icon::before {
+    content: "\2630";
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.header-images img {
+    width: 100%;
+    height: auto;
+}
+
+.header-images .col-md-4 {
+    padding: 0;
+}
+
+.footer {
+    background-color: #EA1D2C;
+}
+
+.footer-section {
+    padding: 50px 0;
+    background-color: #9C050B;
+}
+
+.footer-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer-section img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-section .step {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-section .step h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer-section .step p {
+    font-size: 14px;
+}
