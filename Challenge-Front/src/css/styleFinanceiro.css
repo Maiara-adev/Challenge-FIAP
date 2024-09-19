@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sidebar-sticky.dark-mode {
+    background-color: #1f1f1f;
+    border-right: 1px solid #444;
+}
+
+.sidebar .nav-link {
+    color: #333;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.sidebar .nav-link.dark-mode {
+    color: #e0e0e0;
+}
+
+.sidebar .nav-link.active.dark-mode,
+.sidebar .nav-link:hover.dark-mode {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.logo {
+    width: 80%;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #F6F3F3;
+    /* Cor de fundo revisada */
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-title {
+    font-weight: bold;
+}
+
+.card .card-text {
+    font-size: 1.2em;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::before {
+    background-color: #ff0000;
+    /* Cor de fundo do switch revisada */
+}
+
+.dropdown-toggle::after {
+    margin-left: 10px;
+}
+
+.dropdown-toggle::before {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    content: '';
+    background-image: url('https://via.placeholder.com/12');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+button.btn {
+    border-radius: 20px;
+}
+
+button.btn:hover {
+    background-color: #ff0000;
+    /* Cor de fundo do botão revisada */
+    color: #fff;
+}
+
+.user-profile .media-body h6 {
+    font-weight: bold;
+}
+
+.user-profile .media-body p {
+    margin: 0;
+}
+
+body.dark-mode .user-profile .media-body h6,
+body.dark-mode .user-profile .media-body p {
+    color: #e0e0e0;
+}
