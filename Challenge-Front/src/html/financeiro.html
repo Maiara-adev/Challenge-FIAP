@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento Financeiro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleFinanceiro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <div class="text-center my-4">
+                        <img src="../imgFINANCEIRO/ifd.png" alt="Logo iFood" class="img-fluid logo">
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-th-large"></i> Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-receipt"></i> Receitas e despesas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-wallet"></i> Saldo
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-bar"></i> Relatório
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-cogs"></i> Operacional
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-auto p-3 user-profile">
+                        <div class="media">
+                            <img src="../imgFINANCEIRO/imgProfile.png" alt="User" class="mr-3 rounded-circle"
+                                style="width:40px;">
+                            <div class="media-body">
+                                <h6 class="mt-0">Maria Souza</h6>
+                                <p>Administrador</p>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
+                            <label class="custom-control-label" for="darkModeSwitch">Modo Escuro</label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-10 ml-sm-auto px-md-4 main-content">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h2 class="h2">Gerenciamento financeiro</h2>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Compartilhar</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Exportar</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                            <i class="fas fa-calendar-alt"></i> Esta semana
+                        </button>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Saldo atual</h5>
+                                <p class="card-text">R$1.650,00</p>
+                                <div class="d-flex justify-content-end">
+                                    <i class="fas fa-wallet fa-2x text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Receitas</h5>
+                                <p class="card-text">R$3.000,00</p>
+                                <div class="d-flex justify-content-end">
+                                    <i class="fas fa-arrow-up fa-2x text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Despesas</h5>
+                                <p class="card-text">R$1.350,00</p>
+                                <div class="d-flex justify-content-end">
+                                    <i class="fas fa-arrow-down fa-2x text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4">Meu desempenho</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Despesas por categoria</h5>
+                                <canvas id="pieChart"></canvas>
+                                <button class="btn btn-secondary dropdown-toggle mt-3" type="button">
+                                    Filtrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Balanço mensal</h5>
+                                <canvas id="barChart"></canvas>
+                                <button class="btn btn-secondary dropdown-toggle mt-3" type="button">
+                                    Mês
+                                </button>
+                                <a href="#" class="d-block mt-3">VER MAIS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Desempenho Anual</h5>
+                                <canvas id="lineChart"></canvas>
+                                <button class="btn btn-secondary dropdown-toggle mt-3" type="button">
+                                    Ano
+                                </button>
+                                <a href="#" class="d-block mt-3">VER MAIS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/scriptFinanceiro.js"></script>
+
+</body>
+
+</html>
