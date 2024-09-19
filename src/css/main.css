@@ -1,0 +1,47 @@
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*Poppins*/
+    --font-family-poppins:'Poppins', sans-serif;
+    /*Pesos*/
+    --font-weight-light:100;
+    --font-weight-extra-light:200;
+    --font-weight-regular:400;
+    --font-weight-bold:700;
+    --font-weight-semibold:600;
+    --font-weight-extrabold:800;
+    --font-weight-medio:500;
+
+    /*Cores primárias*/
+    --main-primary-color-original:#EA1D2C;
+    --main-primary-color-light:#FFFFFF;
+
+    /*Cores secundárias*/
+    --main-secundary-color-original:#9C050B;
+    --main-secundary-color-redlight:#A02331;
+    --main-secundary-color-light:#DA5D69;
+    --main-secundary-color-lightest:#F7ACB7;
+
+    /* Bordas - Radius */
+    --border-radius-small:5px;
+    --border-radius-medium:10px;
+    --border-radius-large:15px;
+    --border-radius-pill:500px;
+
+    /* Bordas - Stroke */
+    --border-stroke-small: 1px solid #000000;
+
+    /* Sombras */
+    --shadow-smallest:0px 1px 2px rgb(0,0,0,0.16);
+    --shadow-small:0px 2px 5px rgb(0,0,0,0.16);
+    --shadow-medium:0px 3px 7px rgb(0,0,0,0.16);
+    --shadow-large:0px 12px 11px rgb(0,0,0,0.09);
+    /* Opacidade */
+    --opacity-full:1;
+    --opacity-intense:0.8;
+    --opacity-medium:0.6;
+    --opacity-weak:0.3;
+    --opacity-light:0.2;
+    --opacity-semi-transparent:0.1;
+}
